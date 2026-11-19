@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTA | Tulcán</title>
+  <meta name="description" content="NTA - Tulcán, Carchi, Ecuador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO / MENÚ ===== -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">NTA</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PORTADA ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <p class="hero-tag">Tulcán · Carchi · Ecuador</p>
+        <h1>NTA</h1>
+        <!-- COMPLETAR: frase principal de la empresa -->
+        <p class="hero-text">[Escribe aquí la frase principal de NTA: qué hace y por qué elegirla.]</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+          <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros" class="section">
+      <div class="container">
+        <h2 class="section-title">Nosotros</h2>
+        <!-- COMPLETAR: historia de la empresa -->
+        <p class="section-text">[Historia de NTA: año de fundación, trayectoria en Tulcán y lo que la distingue.]</p>
+        <div class="cards cards-3">
+          <article class="card">
+            <h3>Misión</h3>
+            <p>[Misión de la empresa]</p>
+          </article>
+          <article class="card">
+            <h3>Visión</h3>
+            <p>[Visión de la empresa]</p>
+          </article>
+          <article class="card">
+            <h3>Valores</h3>
+            <p>[Valores de la empresa]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <p class="section-text">[Breve introducción a lo que ofrece NTA.]</p>
+        <div class="cards cards-3">
+          <!-- COMPLETAR: copia un bloque <article> por cada servicio -->
+          <article class="card">
+            <h3>[Servicio 1]</h3>
+            <p>[Descripción del servicio 1]</p>
+          </article>
+          <article class="card">
+            <h3>[Servicio 2]</h3>
+            <p>[Descripción del servicio 2]</p>
+          </article>
+          <article class="card">
+            <h3>[Servicio 3]</h3>
+            <p>[Descripción del servicio 3]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact">
+          <ul class="contact-list">
+            <!-- COMPLETAR: datos reales de contacto -->
+            <li><strong>Dirección:</strong> [Calle y número], Tulcán, Carchi, Ecuador</li>
+            <li><strong>Teléfono:</strong> [Número de teléfono]</li>
+            <li><strong>Correo:</strong> [correo@empresa.com]</li>
+            <li><strong>Horario:</strong> [Lunes a viernes, 08:00 – 17:00]</li>
+          </ul>
+          <iframe
+            class="map"
+            title="Mapa de Tulcán"
+            src="https://www.google.com/maps?q=Tulcán,Ecuador&output=embed"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> NTA · Tulcán, Ecuador</p>
+    </div>
+  </footer>
+
+  <script>
+    // Año automático en el pie de página
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menú en celulares
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => menu.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>
