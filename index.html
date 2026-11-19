@@ -3,107 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NTA | Tulcán</title>
-  <meta name="description" content="NTA - Tulcán, Carchi, Ecuador.">
+  <title>NTA · Nuevo Transporte de América</title>
+  <meta name="description" content="N.T.A. Nuevo Transporte de América: transporte de carga pesada y logística en Ecuador, Colombia y Perú desde 2002. Tulcán, Carchi.">
+  <meta name="theme-color" content="#050505">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Fondo animado (luces rojas + cuadrícula) -->
+  <div class="bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
 
-  <!-- ===== ENCABEZADO / MENÚ ===== -->
+  <!-- ===== MENÚ ===== -->
   <header class="header">
-    <div class="container nav">
-      <a href="#inicio" class="logo">NTA</a>
+    <div class="container nav glass">
+      <a href="index.html" class="logo"><span></span>NTA</a>
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- ===== PORTADA ===== -->
-    <section id="inicio" class="hero">
-      <div class="container hero-content">
-        <p class="hero-tag">Tulcán · Carchi · Ecuador</p>
-        <h1>NTA</h1>
-        <!-- COMPLETAR: frase principal de la empresa -->
-        <p class="hero-text">[Escribe aquí la frase principal de NTA: qué hace y por qué elegirla.]</p>
-        <div class="hero-buttons">
-          <a href="#servicios" class="btn btn-primary">Ver servicios</a>
-          <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+    <section class="hero">
+      <div class="container">
+        <p class="tag reveal">Logística terrestre · Ecuador · Colombia · Perú</p>
+        <h1 class="reveal">Nuevo Transporte<br><span class="outline">de</span> <span class="red">América</span></h1>
+        <p class="lead reveal">Transporte de carga pesada y soluciones logísticas que conectan la región andina. Desde Tulcán, en la frontera norte, movemos tu mercancía con seguridad y puntualidad.</p>
+        <div class="hero-actions reveal">
+          <a href="contacto.html" class="btn btn-primary">Solicitar cotización <span class="arrow">→</span></a>
+          <a href="servicios.html" class="btn btn-ghost">Ver servicios</a>
+        </div>
+
+        <div class="stats glass reveal">
+          <div class="stat"><strong>2002</strong><span>Año de fundación</span></div>
+          <div class="stat"><strong>3</strong><span>Países de operación</span></div>
+          <div class="stat"><strong>+20</strong><span>Años de experiencia</span></div>
+          <div class="stat"><strong>Tulcán</strong><span>Base en la frontera norte</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ===== NOSOTROS ===== -->
-    <section id="nosotros" class="section">
+    <!-- ===== RESUMEN DE SERVICIOS ===== -->
+    <section class="section">
       <div class="container">
-        <h2 class="section-title">Nosotros</h2>
-        <!-- COMPLETAR: historia de la empresa -->
-        <p class="section-text">[Historia de NTA: año de fundación, trayectoria en Tulcán y lo que la distingue.]</p>
-        <div class="cards cards-3">
-          <article class="card">
-            <h3>Misión</h3>
-            <p>[Misión de la empresa]</p>
-          </article>
-          <article class="card">
-            <h3>Visión</h3>
-            <p>[Visión de la empresa]</p>
-          </article>
-          <article class="card">
-            <h3>Valores</h3>
-            <p>[Valores de la empresa]</p>
-          </article>
+        <div class="section-head reveal">
+          <div>
+            <p class="tag">Qué hacemos</p>
+            <h2>Carga que cruza fronteras</h2>
+          </div>
+          <p>Operamos en el corredor andino con experiencia en carga pesada y procesos logísticos binacionales.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== SERVICIOS ===== -->
-    <section id="servicios" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Servicios</h2>
-        <p class="section-text">[Breve introducción a lo que ofrece NTA.]</p>
-        <div class="cards cards-3">
-          <!-- COMPLETAR: copia un bloque <article> por cada servicio -->
-          <article class="card">
-            <h3>[Servicio 1]</h3>
-            <p>[Descripción del servicio 1]</p>
+        <div class="grid grid-3">
+          <article class="card glass reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div>
+            <h3>Carga pesada</h3>
+            <p>Transporte terrestre de mercancía de gran volumen y peso para empresas e industria.</p>
           </article>
-          <article class="card">
-            <h3>[Servicio 2]</h3>
-            <p>[Descripción del servicio 2]</p>
+          <article class="card glass reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+            <h3>Transporte internacional</h3>
+            <p>Operaciones logísticas entre Ecuador, Colombia y Perú a través de los pasos fronterizos.</p>
           </article>
-          <article class="card">
-            <h3>[Servicio 3]</h3>
-            <p>[Descripción del servicio 3]</p>
+          <article class="card glass reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 15l3 3-3 3"/></svg></div>
+            <h3>Logística integral</h3>
+            <p>Planificación de rutas, coordinación de la carga y acompañamiento de principio a fin.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACTO ===== -->
-    <section id="contacto" class="section">
+    <!-- ===== LLAMADO A LA ACCIÓN ===== -->
+    <section class="section">
       <div class="container">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact">
-          <ul class="contact-list">
-            <!-- COMPLETAR: datos reales de contacto -->
-            <li><strong>Dirección:</strong> [Calle y número], Tulcán, Carchi, Ecuador</li>
-            <li><strong>Teléfono:</strong> [Número de teléfono]</li>
-            <li><strong>Correo:</strong> [correo@empresa.com]</li>
-            <li><strong>Horario:</strong> [Lunes a viernes, 08:00 – 17:00]</li>
-          </ul>
-          <iframe
-            class="map"
-            title="Mapa de Tulcán"
-            src="https://www.google.com/maps?q=Tulcán,Ecuador&output=embed"
-            loading="lazy"></iframe>
+        <div class="cta glass reveal">
+          <div>
+            <p class="tag">¿Tienes una carga por mover?</p>
+            <h2 style="margin-top:14px">Cuéntanos origen, destino y tipo de carga. Te respondemos con una cotización.</h2>
+          </div>
+          <a href="contacto.html" class="btn btn-primary">Cotizar ahora <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -111,25 +98,15 @@
 
   <!-- ===== PIE DE PÁGINA ===== -->
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> NTA · Tulcán, Ecuador</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> N.T.A. Nuevo Transporte de América Cía. Ltda. · Tulcán, Ecuador</p>
+      <div class="footer-links">
+        <a href="tel:+593994269944">099 426 9944</a>
+        <a href="mailto:comercial1@nta.com.ec">comercial1@nta.com.ec</a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Año automático en el pie de página
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Menú en celulares
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
-    });
-    menu.querySelectorAll('a').forEach(a =>
-      a.addEventListener('click', () => menu.classList.remove('open'))
-    );
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

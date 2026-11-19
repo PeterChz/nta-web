@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · NTA</title>
+  <meta name="description" content="Contacta a NTA Nuevo Transporte de América y solicita una cotización de transporte de carga.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+  <header class="header">
+    <div class="container nav glass">
+      <a href="index.html" class="logo"><span></span>NTA</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="tag reveal">Contacto</p>
+        <h1 class="reveal">Hablemos de <span class="red">tu carga</span></h1>
+        <p class="reveal">Escríbenos o llámanos. Completa el formulario y se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <a class="card glass contact-item reveal" href="tel:+593994269944">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+          <div><small>Teléfono</small><strong>099 426 9944</strong></div>
+        </a>
+        <a class="card glass contact-item reveal" href="mailto:comercial1@nta.com.ec">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <div><small>Correo comercial</small><strong>comercial1@nta.com.ec</strong></div>
+        </a>
+        <a class="card glass contact-item reveal" href="https://www.facebook.com/transportesNTA/" target="_blank" rel="noopener">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><small>Ubicación</small><strong>Tulcán, Carchi · Ecuador</strong></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <!-- Formulario: al enviar, abre WhatsApp (ver script.js) -->
+        <form id="quote-form" class="form glass reveal">
+          <p class="tag">Solicitar cotización</p>
+          <div class="form-row">
+            <label>Nombre<input name="nombre" required autocomplete="name"></label>
+            <label>Empresa<input name="empresa" autocomplete="organization"></label>
+          </div>
+          <label>Servicio
+            <select name="servicio" required>
+              <option>Transporte de carga pesada</option>
+              <option>Transporte internacional</option>
+              <option>Transporte nacional</option>
+              <option>Logística integral</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Origen<input name="origen" required placeholder="Ej. Tulcán"></label>
+            <label>Destino<input name="destino" required placeholder="Ej. Bogotá"></label>
+          </div>
+          <label>Detalle de la carga<textarea name="mensaje" placeholder="Tipo de mercancía, peso aproximado, fecha..."></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar por WhatsApp <span class="arrow">→</span></button>
+          <p class="form-note">Tus datos solo se usan para responder tu solicitud.</p>
+        </form>
+
+        <div class="glass reveal" style="padding:10px">
+          <iframe class="map" title="Mapa de Tulcán" src="https://www.google.com/maps?q=Tulc%C3%A1n,Ecuador&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> N.T.A. Nuevo Transporte de América Cía. Ltda. · Tulcán, Ecuador</p>
+      <div class="footer-links">
+        <a href="tel:+593994269944">099 426 9944</a>
+        <a href="mailto:comercial1@nta.com.ec">comercial1@nta.com.ec</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

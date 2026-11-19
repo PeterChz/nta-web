@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cobertura · NTA</title>
+  <meta name="description" content="Cobertura de NTA: corredor andino Colombia – Ecuador – Perú, con base en Tulcán.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+  <header class="header">
+    <div class="container nav glass">
+      <a href="index.html" class="logo"><span></span>NTA</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="tag reveal">Cobertura</p>
+        <h1 class="reveal">El corredor <span class="red">andino</span></h1>
+        <p class="reveal">Desde Tulcán, junto al paso fronterizo de Rumichaca, conectamos tres países por carretera.</p>
+      </div>
+    </section>
+
+    <!-- ===== MAPA ESQUEMÁTICO DE RUTAS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="route-map glass reveal">
+          <svg viewBox="0 0 800 420" role="img" aria-label="Ruta esquemática Colombia – Ecuador – Perú">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".4"/>
+                <stop offset=".5" stop-color="#e10600"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity=".4"/>
+              </linearGradient>
+            </defs>
+            <!-- línea base -->
+            <path d="M80 300 C 220 120, 330 120, 400 210 S 600 330, 720 140" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="10" stroke-linecap="round"/>
+            <path class="route-path" d="M80 300 C 220 120, 330 120, 400 210 S 600 330, 720 140" fill="none" stroke="url(#g)" stroke-width="2.5"/>
+
+            <!-- Perú -->
+            <circle cx="80" cy="300" r="7" fill="#fff"/>
+            <text x="80" y="345" fill="#fff" font-family="Space Grotesk, sans-serif" font-size="20" text-anchor="middle">Perú</text>
+            <text x="80" y="368" fill="rgba(255,255,255,.5)" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="middle">SUR</text>
+
+            <!-- Quito -->
+            <circle cx="290" cy="158" r="6" fill="#fff"/>
+            <text x="290" y="132" fill="rgba(255,255,255,.75)" font-family="Space Grotesk, sans-serif" font-size="16" text-anchor="middle">Quito</text>
+
+            <!-- Tulcán (base) -->
+            <circle cx="400" cy="210" r="9" fill="#e10600" class="pulse"/>
+            <circle cx="400" cy="210" r="9" fill="#e10600"/>
+            <text x="400" y="255" fill="#fff" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Tulcán</text>
+            <text x="400" y="276" fill="#e10600" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="middle">BASE · RUMICHACA</text>
+
+            <!-- Ipiales -->
+            <circle cx="520" cy="266" r="6" fill="#fff"/>
+            <text x="520" y="300" fill="rgba(255,255,255,.75)" font-family="Space Grotesk, sans-serif" font-size="16" text-anchor="middle">Ipiales</text>
+
+            <!-- Colombia -->
+            <circle cx="720" cy="140" r="7" fill="#fff"/>
+            <text x="720" y="110" fill="#fff" font-family="Space Grotesk, sans-serif" font-size="20" text-anchor="middle">Colombia</text>
+            <text x="720" y="90" fill="rgba(255,255,255,.5)" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="middle">NORTE</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAÍSES ===== -->
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card country glass reveal">
+          <p class="flag">EC · BASE</p>
+          <h3>Ecuador</h3>
+          <p>Base operativa en Tulcán (Carchi) y conexión con Quito y el resto del país.</p>
+        </article>
+        <article class="card country glass reveal">
+          <p class="flag">CO · NORTE</p>
+          <h3>Colombia</h3>
+          <p>Operación binacional por el paso fronterizo Rumichaca, vía Ipiales.</p>
+        </article>
+        <article class="card country glass reveal">
+          <p class="flag">PE · SUR</p>
+          <h3>Perú</h3>
+          <p>Participación en operaciones logísticas hacia el sur del corredor andino.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta glass reveal">
+          <h2>¿Tu ruta no aparece aquí? Consúltanos.</h2>
+          <a href="contacto.html" class="btn btn-primary">Consultar ruta <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> N.T.A. Nuevo Transporte de América Cía. Ltda. · Tulcán, Ecuador</p>
+      <div class="footer-links">
+        <a href="tel:+593994269944">099 426 9944</a>
+        <a href="mailto:comercial1@nta.com.ec">comercial1@nta.com.ec</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
