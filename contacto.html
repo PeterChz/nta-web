@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto · NTA</title>
-  <meta name="description" content="Contacta a NTA Nuevo Transporte de América y solicita una cotización de transporte de carga.">
+  <meta name="description" content="Contacta a NTA Nuevo Transporte de América: matriz en Tulcán, teléfonos, correos y solicitud de cotización.">
   <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/png" href="assets/logos/logo-nta-sin-fondo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
 
   <header class="header">
     <div class="container nav glass">
-      <a href="index.html" class="logo"><span></span>NTA</a>
+      <a href="index.html" class="logo" aria-label="Inicio N.T.A."><img class="logo-img" src="assets/logos/logo-nta-sin-fondo.png" alt="N.T.A. Cía. Ltda."></a>
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav class="menu">
         <a href="index.html">Inicio</a>
@@ -37,26 +38,85 @@
       </div>
     </section>
 
+    <!-- ===== DATOS DE CONTACTO ===== -->
     <section class="section">
       <div class="container grid grid-3">
         <a class="card glass contact-item reveal" href="tel:+593994269944">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
-          <div><small>Teléfono</small><strong>099 426 9944</strong></div>
+          <div><small>Teléfonos</small><strong>0994269944 · 0997753520</strong></div>
         </a>
         <a class="card glass contact-item reveal" href="mailto:comercial1@nta.com.ec">
           <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
-          <div><small>Correo comercial</small><strong>comercial1@nta.com.ec</strong></div>
+          <div><small>Correos comerciales</small><strong>comercial1@nta.com.ec<br>comercial@nta.com.ec</strong></div>
         </a>
-        <a class="card glass contact-item reveal" href="https://www.facebook.com/transportesNTA/" target="_blank" rel="noopener">
+        <a class="card glass contact-item reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Argentina+y+Juan+Le%C3%B3n+Mera+S%2FN%2C+Tulc%C3%A1n%2C+Ecuador" target="_blank" rel="noopener">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-          <div><small>Ubicación</small><strong>Tulcán, Carchi · Ecuador</strong></div>
+          <div><small>Matriz</small><strong>Av. Argentina y Juan León Mera S/N, Tulcán</strong></div>
         </a>
       </div>
     </section>
 
+    <!-- ===== SEDES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="tag">Nuestras sedes</p>
+            <h2>Centros operativos</h2>
+          </div>
+          <p>Seis puntos de atención en Ecuador y Colombia.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card glass loc-card matriz reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/oficina-tulcan.jpg" alt="Oficina matriz N.T.A. en Tulcán" loading="lazy"><figcaption class="photo-cap">Matriz</figcaption></figure>
+            <span class="badge">Matriz · Tulcán</span>
+            <h3>Tulcán</h3>
+            <p>Av. Argentina y Juan León Mera S/N</p>
+          </article>
+
+          <article class="card glass loc-card reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/patio-tulcan.jpg" alt="Patio N.T.A. en Tulcán" loading="lazy"><figcaption class="photo-cap">Patio</figcaption></figure>
+            <span class="badge">Patio</span>
+            <h3>Tulcán · Patio</h3>
+            <p>Ingreso Sur a Tulcán, junto a la Estación de Servicio de Centinela del Norte</p>
+          </article>
+
+          <article class="card glass loc-card reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/oficina-ipiales.jpg" alt="Oficina N.T.A. en Ipiales" loading="lazy"><figcaption class="photo-cap">Colombia</figcaption></figure>
+            <span class="badge">Colombia</span>
+            <h3>Ipiales</h3>
+            <p>C.C. Rumichaca, Local 24</p>
+          </article>
+
+          <article class="card glass loc-card reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/oficina-quito.jpg" alt="Oficina N.T.A. en Quito" loading="lazy"><figcaption class="photo-cap">Quito</figcaption></figure>
+            <span class="badge">Ecuador</span>
+            <h3>Quito</h3>
+            <p>Calle Leonidas Proaño S/N y Panamericana Norte</p>
+          </article>
+
+          <article class="card glass loc-card reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/oficina-huaquillas.jpg" alt="Oficina N.T.A. en Huaquillas" loading="lazy"><figcaption class="photo-cap">Huaquillas</figcaption></figure>
+            <span class="badge">Ecuador</span>
+            <h3>Huaquillas</h3>
+            <p>Urb. Urbasol, Av. La República y Los Almendros</p>
+          </article>
+
+          <article class="card glass loc-card reveal">
+            <figure class="photo"><img src="assets/fotos/instalaciones/patio-guayaquil.jpg" alt="Patio N.T.A. en Guayaquil" loading="lazy"><figcaption class="photo-cap">Patio</figcaption></figure>
+            <span class="badge">Patio</span>
+            <h3>Guayaquil · Patio</h3>
+            <p>Km 24, Vía a Daule</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULARIO + MAPA ===== -->
     <section class="section">
       <div class="container grid grid-2">
-        <!-- Formulario: al enviar, abre WhatsApp (ver script.js) -->
+        <!-- Formulario: al enviar, abre WhatsApp (ver js/script.js) -->
         <form id="quote-form" class="form glass reveal">
           <p class="tag">Solicitar cotización</p>
           <div class="form-row">
@@ -65,9 +125,10 @@
           </div>
           <label>Servicio
             <select name="servicio" required>
-              <option>Transporte de carga pesada</option>
-              <option>Transporte internacional</option>
-              <option>Transporte nacional</option>
+              <option>Carga pesada, liviana o especial</option>
+              <option>Logística internacional</option>
+              <option>Carga controlada o peligrosa</option>
+              <option>Agenciamiento aduanero</option>
               <option>Logística integral</option>
             </select>
           </label>
@@ -80,8 +141,14 @@
           <p class="form-note">Tus datos solo se usan para responder tu solicitud.</p>
         </form>
 
-        <div class="glass reveal" style="padding:10px">
-          <iframe class="map" title="Mapa de Tulcán" src="https://www.google.com/maps?q=Tulc%C3%A1n,Ecuador&output=embed" loading="lazy"></iframe>
+        <div class="reveal">
+          <div class="glass" style="padding:10px">
+            <iframe class="map" title="Mapa de la matriz N.T.A. en Tulcán" src="https://www.google.com/maps?q=Av.+Argentina+y+Juan+Le%C3%B3n+Mera+S%2FN%2C+Tulc%C3%A1n%2C+Ecuador&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Argentina+y+Juan+Le%C3%B3n+Mera+S%2FN%2C+Tulc%C3%A1n%2C+Ecuador" target="_blank" rel="noopener">Cómo llegar <span class="arrow">→</span></a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Argentina+y+Juan+Le%C3%B3n+Mera+S%2FN%2C+Tulc%C3%A1n%2C+Ecuador" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
         </div>
       </div>
     </section>
@@ -89,14 +156,14 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> N.T.A. Nuevo Transporte de América Cía. Ltda. · Tulcán, Ecuador</p>
+      <p>© <span id="year"></span> N.T.A. Cía. Ltda. &amp; Rodfront S.A. · Tulcán, Ecuador</p>
       <div class="footer-links">
-        <a href="tel:+593994269944">099 426 9944</a>
+        <a href="tel:+593994269944">0994269944</a>
         <a href="mailto:comercial1@nta.com.ec">comercial1@nta.com.ec</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

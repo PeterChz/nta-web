@@ -15,6 +15,12 @@ if (toggle && menu) {
     toggle.setAttribute('aria-expanded', open);
     toggle.textContent = open ? '✕' : '☰';
   });
+  // Al elegir una opción en el celular, el menú se cierra
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = '☰';
+  }));
 }
 
 // 3) Marca en rojo la página actual del menú
@@ -40,13 +46,15 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const d = new FormData(form);
-    const text =
-      `Hola NTA, quisiera una cotización.%0A` +
-      `Nombre: ${encodeURIComponent(d.get('nombre'))}%0A` +
-      `Empresa: ${encodeURIComponent(d.get('empresa') || '-')}%0A` +
-      `Servicio: ${encodeURIComponent(d.get('servicio'))}%0A` +
-      `Origen: ${encodeURIComponent(d.get('origen'))} → Destino: ${encodeURIComponent(d.get('destino'))}%0A` +
-      `Detalle: ${encodeURIComponent(d.get('mensaje') || '-')}`;
-    window.open(`https://wa.me/593994269944?text=${text}`, '_blank');
+    const lines = [
+      'Hola NTA, quisiera una cotización.',
+      `Nombre: ${d.get('nombre')}`,
+      `Empresa: ${d.get('empresa') || '-'}`,
+      `Servicio: ${d.get('servicio')}`,
+      `Origen: ${d.get('origen')} | Destino: ${d.get('destino')}`,
+      `Detalle: ${d.get('mensaje') || '-'}`
+    ];
+    // encodeURIComponent se aplica una sola vez, al mensaje completo
+    window.open(`https://wa.me/593994269944?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
   });
 }
