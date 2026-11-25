@@ -58,3 +58,24 @@ if (form) {
     window.open(`https://wa.me/593994269944?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
   });
 }
+
+// 6) Botón de modo claro / oscuro (la elección se guarda en el navegador)
+const themeBtn = document.querySelector('.theme-toggle');
+const root = document.documentElement;
+function applyTheme(theme, save) {
+  root.setAttribute('data-theme', theme);
+  if (themeBtn) themeBtn.setAttribute('aria-label', theme === 'light' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro');
+  if (save) { try { localStorage.setItem('nta-theme', theme); } catch (e) {} }
+}
+applyTheme(root.getAttribute('data-theme') || 'dark', false);
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    applyTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light', true);
+  });
+}
+// Si la persona no eligió un tema, la página sigue el modo del sistema
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+  let saved = null;
+  try { saved = localStorage.getItem('nta-theme'); } catch (err) {}
+  if (!saved) applyTheme(e.matches ? 'light' : 'dark', false);
+});
